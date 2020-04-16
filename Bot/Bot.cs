@@ -159,8 +159,8 @@ namespace Bot
 
                 Keyboards[e.Message.From.Id].startitngRegistration_plot = new StartitngRegistration();
 
-                if(e.Message.MessageId == 0)//почему тут не работает.
-                    Messages.SendInstruction(e.Message.Chat);
+                
+                Messages.SendInstruction(e.Message.Chat);
 
                 return;
             }
